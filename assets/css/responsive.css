@@ -14,8 +14,46 @@
   }
 
   .nav {
-    margin: 7% 7%;
+    margin: 0 7%;
+    padding-top: 7%;
   }
+
+  .company {
+    flex-direction: column;
+  }
+
+  .company img {
+    margin-top: 25%;
+    margin-bottom: 25%;
+  }
+
+  .face-title > h1 {
+    font-size: 3rem;
+    text-align: left;
+    margin: 0;
+  }
+
+  .face-title {
+    margin-bottom: 12%;
+  }
+
+  .face {
+    display:block;
+    margin: 10%;
+    margin-top: 15%;
+    margin-left: 5%;
+  }
+
+  .face-subtitle {
+    width: 80%;
+    margin-bottom: 15%;
+    text-align: left;
+  }
+
+  .btn-outline {
+    margin-left: 5%;
+  }
+
 }
 
 @media only screen and (min-width: 600px) and (max-width: 916px) {
@@ -34,7 +72,32 @@
   }
 
   .nav {
-    margin: 7% 7%;
+    margin: 0% 7%;
+    padding-top: 7%;
+  }
+
+  .company {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 50% 0%;
+  }
+
+  .face-title > h1 {
+    font-size: 3rem;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .face {
+    margin-top: 30%;
+  }
+
+  .face-subtitle {
+    width: 60%;
+    margin-bottom: 5%;
   }
 }
 
