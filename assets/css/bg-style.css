@@ -79,8 +79,12 @@
 
 .company {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content:space-evenly;
+    align-items: center;
+    margin: 20% 0;
+}
+
+.face {
+    height: 70vh;
 }
 
