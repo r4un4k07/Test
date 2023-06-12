@@ -14,6 +14,9 @@ a {
   text-decoration: none;
   color: black;
 }
+a:active {
+  color: grey;
+}
 
 .nav {
   display: flex;
@@ -37,11 +40,12 @@ a {
 
 .btn-yellow {
   background-color: #DBF301;
-  border: none;
+  border: 2px solid #DBF301;
   font-weight: 500;
 }
-.btn-yellow:hover {
+.btn-yellow:active {
   background-color: #c8de02;
+  border-color: #c8de02;
 }
 
 .btn-outline {
@@ -49,7 +53,7 @@ a {
   border: 2px solid #DBF301;
   font-weight: 500;
 }
-.btn-outline:hover {
+.btn-outline:active {
   background-color: #e8e8e8;
 }
 
@@ -68,7 +72,7 @@ a {
 }
 
 .company {
-  margin: 3rem 5%;
+  margin: 4rem 5%;
   display: grid;
   align-items: center;
   justify-items: center;
@@ -81,7 +85,7 @@ a {
   text-align: center;
   margin: auto;
   width: 60%;
-  margin: 3rem auto;
+  margin: 5rem auto;
 }
 
 .feature-box {
@@ -108,11 +112,150 @@ a {
   width: 95%;
 }
 
-.team {
+#team {
   text-align: center;
 }
-.team img {
+#team img {
   width: 95%;
+}
+
+.tml-review {
+  font-weight: 500;
+}
+.tml-review .desig span {
+  color: #64748B;
+}
+
+.tml {
+  display: flex;
+}
+
+.testimonial {
+  display: flex;
+}
+
+.price-card {
+  text-align: center;
+  color: white;
+}
+.price-card h1 {
+  font-weight: 700;
+  font-size: 1.4583333333vw;
+  padding-top: 2.1527777778vw;
+}
+.price-card h2 {
+  font-weight: 400;
+  font-size: 1.1111111111vw;
+  margin-top: 0.1513888889vw;
+}
+
+.price-card-free {
+  text-align: center;
+  color: black;
+}
+.price-card-free h1 {
+  font-weight: 700;
+  font-size: 1.4583333333vw;
+  padding-top: 2.1527777778vw;
+}
+.price-card-free h2 {
+  font-weight: 400;
+  font-size: 1.1111111111vw;
+  margin-top: 0.1513888889vw;
+}
+
+.price-card-premium span {
+  font-family: "Inter", sans-serif !important;
+}
+
+.amount {
+  font-size: 3.3333333333vw;
+  font-weight: 700;
+}
+
+.price {
+  margin-top: 1.6326388889vw;
+}
+
+.month {
+  font-size: 1.1111111111vw;
+}
+
+.premium-hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1254901961);
+  margin-top: 1.3888888889vw;
+}
+
+.free-hr {
+  border: 0;
+  height: 1px;
+  background: #E5EAF1;
+  margin-top: 1.3888888889vw;
+}
+
+.price-card-ul {
+  list-style-type: none;
+  margin-top: 2.2222222222vw;
+}
+.price-card-ul li {
+  font-size: 1.1111111111vw;
+  margin: 1.7361111111vw;
+}
+
+.price-btn {
+  font-weight: 600;
+  font-size: 1.1111111111vw;
+  width: 13.8888888889vw;
+  height: 3.8888888889vw;
+  border-radius: 0.5555555556vw;
+  margin-top: 1.0416666667vw;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-premium {
+  color: #485AFF;
+}
+
+.btn-free {
+  background-color: #485AFF;
+  color: white;
+}
+
+.price-card-premium {
+  background-color: #485AFF;
+  border: 2px solid #485AFF;
+}
+
+.price-card-free {
+  height: 33.0555555556vw;
+  width: 22.0833333333vw;
+  border: 1px solid #E5EAF1;
+}
+
+.price-title {
+  font-weight: 600;
+  font-size: 2.9166666667vw;
+  flex-basis: 50%;
+  margin: 0.6944444444vw 1.3888888889vw;
+}
+
+.price-title p {
+  width: 100%;
+}
+
+.price-card {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+  gap: 4.5833333333vw;
+}
+
+.pricing-div {
+  display: flex;
+  margin: 10.4166666667vw 5.1388888889vw 0;
 }
 
 @media only screen and (min-width: 916px) and (max-width: 1920px) {
@@ -197,6 +340,38 @@ a {
   .phone-team {
     display: none;
   }
+  .rating {
+    margin-top: 1.0416666667vw;
+  }
+  .rating img {
+    width: 8.4027777778vw;
+  }
+  .tml-review {
+    margin-left: 2.7777777778vw;
+  }
+  .desc {
+    font-size: 1.25vw;
+    margin-top: 2.1527777778vw;
+  }
+  .desig {
+    font-size: 1.1111111111vw;
+    margin-top: 3.3333333333vw;
+  }
+  .desig span {
+    margin-left: 0.9027777778vw;
+  }
+  .tml-image img {
+    width: 16.5972222222vw;
+  }
+  .testimonial {
+    gap: 3.1944444444vw;
+    margin: 0 5vw;
+  }
+  .price-card-premium, .price-card-free {
+    height: 33.0555555556vw;
+    width: 22.0833333333vw;
+    border-radius: 0.8333333333vw;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 916px) {
   .background {
@@ -230,6 +405,9 @@ a {
     height: 6.2350119904vw;
     border-radius: 1.1990407674vw;
     font-size: 1.9184652278vw;
+  }
+  .tml-image img {
+    width: 28.6570743405vw;
   }
   .face {
     height: 80vh;
@@ -270,6 +448,114 @@ a {
   }
   .phone-team {
     display: none;
+  }
+  .rating {
+    margin-top: 1.7985611511vw;
+  }
+  .rating img {
+    width: 14.5083932854vw;
+  }
+  .desc {
+    font-size: 2.1582733813vw;
+    margin-top: 3.7170263789vw;
+  }
+  .desig {
+    font-size: 1.9184652278vw;
+    margin-top: 5.7553956835vw;
+  }
+  .desig span {
+    margin-left: 1.5587529976vw;
+  }
+  .tml-review {
+    margin-left: 4.7961630695vw;
+  }
+  .testimonial {
+    flex-direction: column;
+    gap: 5.035971223vw;
+    margin: 0 8.6330935252vw;
+  }
+  .price-card-premium, .price-card-free {
+    height: 57.0743405276vw;
+    width: 38.1294964029vw;
+    border-radius: 1.4388489209vw;
+  }
+  .price-card h1 {
+    font-size: 2.5179856115vw;
+    padding-top: 3.7170263789vw;
+  }
+  .price-card {
+    text-align: center;
+    color: white;
+  }
+  .price-card h1 {
+    font-weight: 700;
+    font-size: 2.5179856115vw;
+    padding-top: 3.7170263789vw;
+  }
+  .price-card h2 {
+    font-size: 1.9184652278vw;
+    margin-top: 0.2613908873vw;
+  }
+  .price-card-free h1 {
+    font-size: 2.5179856115vw;
+    padding-top: 3.7170263789vw;
+  }
+  .price-card-free h2 {
+    font-size: 1.9184652278vw;
+    margin-top: 0.2613908873vw;
+  }
+  .amount {
+    font-size: 5.7553956835vw;
+  }
+  .price {
+    margin-top: 2.8189448441vw;
+  }
+  .month {
+    font-size: 1.9184652278vw;
+  }
+  .premium-hr {
+    margin-top: 2.3980815348vw;
+  }
+  .free-hr {
+    margin-top: 2.3980815348vw;
+  }
+  .price-card-ul {
+    margin-top: 3.8369304556vw;
+  }
+  .price-card-ul li {
+    font-size: 1.9184652278vw;
+    margin: 2.9976019185vw;
+  }
+  .price-btn {
+    font-size: 1.9184652278vw;
+    width: 23.9808153477vw;
+    height: 6.7146282974vw;
+    border-radius: 0.9592326139vw;
+    margin-top: 1.7985611511vw;
+  }
+  .price-card-free {
+    height: 57.0743405276vw;
+    width: 38.1294964029vw;
+  }
+  .pricing-div {
+    flex-direction: column;
+  }
+  .price-title {
+    font-weight: 600;
+    font-size: 5.035971223vw;
+    margin: 1.1990407674vw 2.3980815348vw;
+  }
+  .price-title p {
+    width: 90%;
+  }
+  .price-card {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 9.5923261391vw;
+  }
+  .pricing-div {
+    display: flex;
+    margin-top: 17.9856115108vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -353,5 +639,128 @@ a {
   }
   .desktop-team {
     display: none;
+  }
+  .rating {
+    margin-top: 3.8461538462vw;
+  }
+  .rating img {
+    width: 31.0256410256vw;
+  }
+  .desc {
+    font-size: 4.6153846154vw;
+    margin-top: 7.9487179487vw;
+  }
+  .desig {
+    font-size: 4.1025641026vw;
+    margin-top: 12.3076923077vw;
+  }
+  .desig span {
+    margin-left: 3.3333333333vw;
+  }
+  .tml-image img {
+    width: 61.2820512821vw;
+  }
+  .tml, .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tml-review {
+    width: 61.2820512821vw;
+    margin-top: 10.2564102564vw;
+  }
+  .tml-image {
+    margin-top: 10.2564102564vw;
+  }
+  .price-card-premium, .price-card-free {
+    height: 122.0512820513vw;
+    width: 81.5384615385vw;
+    border-radius: 3.0769230769vw;
+  }
+  .price-card h1 {
+    font-size: 5.3846153846vw;
+    padding-top: 7.9487179487vw;
+  }
+  .price-card-premium, .price-card-free {
+    height: 122.0512820513vw;
+    width: 81.5384615385vw;
+    border-radius: 3.0769230769vw;
+  }
+  .price-card h1 {
+    font-size: 5.3846153846vw;
+    padding-top: 7.9487179487vw;
+  }
+  .price-card {
+    text-align: center;
+    color: white;
+  }
+  .price-card h1 {
+    font-weight: 700;
+    font-size: 5.3846153846vw;
+    padding-top: 7.9487179487vw;
+  }
+  .price-card h2 {
+    font-size: 4.1025641026vw;
+    margin-top: 0.558974359vw;
+  }
+  .price-card-free h1 {
+    font-size: 5.3846153846vw;
+    padding-top: 7.9487179487vw;
+  }
+  .price-card-free h2 {
+    font-size: 4.1025641026vw;
+    margin-top: 0.558974359vw;
+  }
+  .amount {
+    font-size: 12.3076923077vw;
+  }
+  .price {
+    margin-top: 6.0282051282vw;
+  }
+  .month {
+    font-size: 4.1025641026vw;
+  }
+  .premium-hr {
+    margin-top: 5.1282051282vw;
+  }
+  .free-hr {
+    margin-top: 5.1282051282vw;
+  }
+  .price-card-ul {
+    margin-top: 8.2051282051vw;
+  }
+  .price-card-ul li {
+    font-size: 4.1025641026vw;
+    margin: 6.4102564103vw;
+  }
+  .price-btn {
+    font-size: 4.1025641026vw;
+    width: 51.2820512821vw;
+    height: 14.358974359vw;
+    border-radius: 2.0512820513vw;
+    margin-top: 3.8461538462vw;
+  }
+  .price-card-free {
+    height: 122.0512820513vw;
+    width: 81.5384615385vw;
+  }
+  .pricing-div {
+    flex-direction: column;
+  }
+  .price-title {
+    font-size: 10.7692307692vw;
+    margin: 2.5641025641vw 5.1282051282vw;
+  }
+  .price-title p {
+    width: 90%;
+  }
+  .price-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20.5128205128vw;
+  }
+  .pricing-div {
+    display: flex;
+    margin-top: 38.4615384615vw;
   }
 }/*# sourceMappingURL=style.css.map */
