@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.background {
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo .logo-title {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-yellow {
+  background-color: #DBF301;
+  border: none;
+  font-weight: 500;
+}
+.btn-yellow:hover {
+  background-color: #c8de02;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #DBF301;
+  font-weight: 500;
+}
+.btn-outline:hover {
+  background-color: #e8e8e8;
+}
+
+.face {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  justify-content: center;
+}
+.face h1 {
+  font-weight: 800;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.company {
+  margin: 3rem 5%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.company .company-item {
+  margin: 5%;
+}
+
+.floating-text {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  margin: 3rem auto;
+}
+
+.feature-box {
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+.grid-feature {
+  display: grid;
+  gap: 2px;
+  background-color: #e8e8e8;
+  margin: 5%;
+}
+
+.feature-title {
+  font-weight: 500;
+}
+
+.feature-subtitle {
+  width: 95%;
+}
+
+.team {
+  text-align: center;
+}
+.team img {
+  width: 95%;
+}
+
+@media only screen and (min-width: 916px) and (max-width: 1920px) {
+  .background {
+    background-image: url("./assets/images/bg-main.png");
+    background-size: 95%;
+    background-position: center 45%;
+  }
+  .option {
+    display: none;
+  }
+  .nav {
+    padding: 2.3611111111vw 4.9305555556vw 0;
+  }
+  .logo {
+    flex-basis: 20%;
+  }
+  .logo img {
+    height: 2.0833333333vw;
+  }
+  .logo .logo-title {
+    font-size: 1.1111111111vw;
+    letter-spacing: 0.2083333333vw;
+    margin-left: 1.1111111111vw;
+  }
+  .sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.1111111111vw;
+    flex-basis: 20%;
+  }
+  .sign span {
+    margin-right: 1.6666666667vw;
+  }
+  .section {
+    font-size: 1.1111111111vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 30%;
+  }
+  .btn {
+    width: 8.5416666667vw;
+    height: 3.6111111111vw;
+    border-radius: 0.6944444444vw;
+    font-size: 1.1111111111vw;
+  }
+  .face .face-title {
+    font-size: 2.7777777778vw;
+  }
+  .face .face-title h1 {
+    margin-bottom: 2.0833333333vw;
+  }
+  .face .face-subtitle {
+    font-size: 1.6666666667vw;
+    margin-bottom: 2.0833333333vw;
+  }
+  .face .btn-outline {
+    margin-left: 1.3888888889vw;
+  }
+  .company {
+    grid: 1fr/repeat(4, 1fr);
+  }
+  .floating-text {
+    font-size: 1.6666666667vw;
+  }
+  .grid-feature {
+    grid: repeat(2, 1fr)/repeat(3, 1fr);
+  }
+  .feature-image img {
+    width: 2.9166666667vw;
+  }
+  .feature-title {
+    font-size: 1.4583333333vw;
+    margin-top: 1.6666666667vw;
+    margin-bottom: 1.6666666667vw;
+  }
+  .feature-subtitle {
+    font-size: 1.1111111111vw;
+  }
+  .phone-team {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 916px) {
+  .background {
+    background-image: url("./assets/images/bg-tab.png");
+    background-size: 170%;
+    background-position: 50% 40%;
+  }
+  .section,
+  .sign {
+    display: none;
+  }
+  .option {
+    display: block;
+  }
+  .logo img {
+    height: 30px;
+  }
+  .logo .logo-title {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-left: 1rem;
+  }
+  .option span {
+    font-size: 2.3rem;
+  }
+  .nav {
+    padding: 3.3573141487vw 6.8345323741vw 0;
+  }
+  .btn {
+    width: 14.7482014388vw;
+    height: 6.2350119904vw;
+    border-radius: 1.1990407674vw;
+    font-size: 1.9184652278vw;
+  }
+  .face {
+    height: 80vh;
+  }
+  .face .face-title {
+    font-size: 4.1966426859vw;
+  }
+  .face .face-title h1 {
+    margin-bottom: 3.5971223022vw;
+    width: 80%;
+  }
+  .face .face-subtitle {
+    font-size: 2.3980815348vw;
+    margin-bottom: 3.5971223022vw;
+  }
+  .face .btn-outline {
+    margin-left: 2.3980815348vw;
+  }
+  .company {
+    grid: repeat(2, 1fr)/repeat(2, 1fr);
+  }
+  .floating-text {
+    font-size: 2.3980815348vw;
+  }
+  .grid-feature {
+    grid: repeat(3, 1fr)/repeat(2, 1fr);
+  }
+  .feature-image img {
+    width: 5.035971223vw;
+  }
+  .feature-title {
+    font-size: 2.5179856115vw;
+    margin-top: 2.8776978417vw;
+    margin-bottom: 2.8776978417vw;
+  }
+  .feature-subtitle {
+    font-size: 1.9184652278vw;
+  }
+  .phone-team {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .background {
+    background-image: url("./assets/images/bg-phn.png");
+    background-size: 200%;
+    background-position: 98%;
+  }
+  .section,
+  .sign {
+    display: none;
+  }
+  .option {
+    display: block;
+  }
+  .option svg {
+    font-size: 1rem;
+  }
+  .logo img {
+    height: 30px;
+  }
+  .logo .logo-title {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-left: 1rem;
+  }
+  .option span {
+    font-size: 2.3rem;
+  }
+  .nav {
+    padding: 6.1538461538vw 6.9230769231vw 0;
+  }
+  .btn {
+    width: 31.5384615385vw;
+    height: 13.3333333333vw;
+    border-radius: 2.5641025641vw;
+    font-size: 4.1025641026vw;
+  }
+  .face {
+    margin-left: 6.9230769231vw;
+    text-align: left;
+    height: 75vh;
+    align-items: flex-start;
+  }
+  .face .face-title {
+    font-size: 8.4615384615vw;
+  }
+  .face .face-title h1 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 7.6923076923vw;
+    width: 90%;
+  }
+  .face .face-subtitle {
+    font-size: 5.1282051282vw;
+    margin-bottom: 7.6923076923vw;
+    width: 90%;
+  }
+  .face .btn-outline {
+    margin-left: 5.1282051282vw;
+  }
+  .company {
+    grid: repeat(4, 1fr)/1fr;
+  }
+  .floating-text {
+    font-size: 5.1282051282vw;
+  }
+  .grid-feature {
+    grid-template-columns: 1fr;
+  }
+  .feature-image img {
+    width: 10.7692307692vw;
+  }
+  .feature-title {
+    font-size: 5.3846153846vw;
+    margin-top: 6.1538461538vw;
+    margin-bottom: 6.1538461538vw;
+  }
+  .feature-subtitle {
+    font-size: 4.1025641026vw;
+  }
+  .desktop-team {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
