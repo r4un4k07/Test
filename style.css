@@ -417,6 +417,11 @@ a:active {
   .nav-bottom {
     padding-top: 4.1666666667vw;
   }
+  .section-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 30%;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 916px) {
   .background {
@@ -641,6 +646,11 @@ a:active {
   footer {
     margin-top: 4.7961630695vw;
   }
+  .section-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 30%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .background {
@@ -855,7 +865,6 @@ a:active {
     flex-direction: column;
     align-items: center;
     gap: 5.641025641vw;
-    width: 103.5897435897vw;
   }
   .social-media {
     display: flex;
@@ -882,5 +891,6 @@ a:active {
     margin-top: 5.3846153846vw;
     height: 121.2820512821vw;
     margin-right: 0;
+    margin-bottom: 0;
   }
-}
+}/*# sourceMappingURL=style.css.map */
